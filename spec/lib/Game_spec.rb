@@ -129,13 +129,13 @@ describe Game do
 		    g3.roll(5) #spare
 		    #frame6
 		    g3.roll(2)
-		    g3.roll(8) #strike
+		    g3.roll(8) #spare
 		    #frame7
 		    g3.roll(2)
 		    g3.roll(1)
 		    #frame8
 		    g3.roll(2)
-		    g3.roll(8) #strike
+		    g3.roll(8) #spare
 		    #frame9
 		    g3.roll(10)	#strike
 		    #frame10
