@@ -173,6 +173,44 @@ describe Game do
 					
 		end
 
+		it "noob bowler" do
+			g = Game.new
+			 #frame1
+		      g.roll(1)
+		      g.roll(1) 
+		      #frame2
+		      g.roll(0)
+		      g.roll(0)
+		      #frame3
+		      g.roll(0)
+		      g.roll(2)
+		      #frame4
+		      g.roll(1)
+		      g.roll(2)
+		      #frame5
+		      g.roll(2)
+		      g.roll(0) 
+		      #frame6
+		      g.roll(1)
+		      g.roll(0)
+		      #frame7
+		      g.roll(1)
+		      g.roll(3)
+		      #frame8
+		      g.roll(2)
+		      g.roll(2)
+		      #frame9
+		      g.roll(1)
+		      g.roll(4) 
+		      #frame10
+		      g.roll(0)
+		      g.roll(1)
+		       #no row3
+		      expect(g.score).to eq(24)
+					
+					
+		end
+
 	end
 	
 end
