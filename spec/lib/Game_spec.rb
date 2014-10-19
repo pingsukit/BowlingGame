@@ -7,6 +7,41 @@ describe Game do
 	end
 
 	describe "prove score and roll method" do
+		it 'given example score (from excel file)' do
+	    	g6 = Game.new
+		    #Frame1
+		    g6.roll(10) #strike
+		    
+		    #Frame2
+		    g6.roll(8)
+		    g6.roll(1)
+		    #Frame3
+		    g6.roll(2)
+		    g6.roll(8) #spare
+		    #Frame4
+		    g6.roll(5)
+		    g6.roll(4) 
+		    #Frame5
+		    g6.roll(10) #strike
+		    
+		    #Frame6
+		    g6.roll(10) #strike
+		    
+		    #Frame7
+		    g6.roll(10) #strike
+		    
+		    #Frame8
+		    g6.roll(5)
+		    g6.roll(5) #spare
+		    #Frame9
+		    g6.roll(10)	#strike
+		    
+		    #Frame10
+		    g6.roll(10) #strike
+		    g6.roll(0)
+		    g6.roll(0)
+		    expect(g6.score).to eq(177)
+	    end
 		it "frame 10 strike" do
 			g = Game.new
 			  #frame1
